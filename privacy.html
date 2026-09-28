@@ -14,7 +14,7 @@
 </header>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: 28 September 2026</p>
+  <p class="meta">Effective date: 28 September 2026 (version 2)</p>
 
   <h2>1. About this policy</h2>
   <p>This Privacy Policy explains what information Cong Ty Kenh (the "tool") accesses when its owner connects the owner's YouTube channels, and how that information is used, stored, shared and deleted. Cong Ty Kenh is a private, single-user desktop tool: its only user is its owner, and it only manages YouTube channels that the owner owns or manages. You must agree to this policy before using the tool.</p>
@@ -26,7 +26,10 @@
   <ul>
     <li><strong>Channel information:</strong> channel ID, title and handle.</li>
     <li><strong>Channel statistics:</strong> subscriber count, view count, video count, and whether the subscriber count is hidden.</li>
-    <li><strong>Channel branding settings:</strong> the channel description and keywords. The current text is read before any change so that the change can be undone.</li>
+    <li><strong>Channel branding settings:</strong> the channel description and keywords. The current text is read before any change so that the change can be undone. If the channel has a banner image, its reference is sent back unchanged whenever branding settings are updated, so that the banner is not removed.</li>
+    <li><strong>Channel settings:</strong> the channel's country and default language. They are read, and set only for a channel whose profile the owner has approved: the country is set to Vietnam, where the owner lives, and the default language to the channel's language. The current values are read before any change so that the change can be undone.</li>
+    <li><strong>Channel status (read only):</strong> whether the channel can upload videos longer than 15 minutes (which shows whether phone verification is done), whether the channel is set as made for kids, and whether it has a banner image. The tool never changes these.</li>
+    <li><strong>Playlists:</strong> the titles of the owner's own playlists, read to avoid creating the same playlist twice. Playlist IDs are not stored.</li>
     <li><strong>OAuth authorization:</strong> the refresh token that Google issues when the owner grants access.</li>
   </ul>
   <p>The tool does not access or store Google passwords, emails, contacts, payment information, or data about other people's accounts.</p>
@@ -34,7 +37,9 @@
   <h2>4. How the information is used</h2>
   <ul>
     <li>To show the owner a private dashboard of the owner's own channels.</li>
-    <li>To update a channel's description (and, if chosen, keywords) with text the owner has reviewed and approved, and to read it back to confirm the change.</li>
+    <li>To update a channel's description (and, if chosen, keywords), country and default language to match the channel profile the owner has reviewed and approved, and to read them back to confirm the change.</li>
+    <li>To create public playlists whose titles the owner has approved in the channel profile. The tool never deletes or renames playlists.</li>
+    <li>To show the owner which setup steps are still missing for each channel (for example, phone verification).</li>
     <li>To keep a short local history of changes so that the owner can undo a change.</li>
   </ul>
   <p>The information is not used for advertising, is not sold, and is not used to build profiles.</p>
@@ -50,12 +55,12 @@
   <p>The information is not shared with any third party, internal or external. The only party that receives it is Google/YouTube, when the tool calls YouTube API Services. The tool does not show advertisements and does not allow third parties to serve content or advertisements.</p>
 
   <h2>7. Cookies and data on your device</h2>
-  <p>Cong Ty Kenh is a desktop tool, not a website. It stores the files described in this policy on the owner's own computer: the encrypted authorization, cached channel statistics and a short change history. It does not place cookies or similar technology in any browser, and it does not collect information from anyone else's device. This website is hosted on GitHub Pages and does not set cookies; GitHub may keep standard server logs as described in the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+  <p>Cong Ty Kenh is a desktop tool, not a website. It stores the files described in this policy on the owner's own computer: the encrypted authorization, cached channel statistics, a short change history, and small markers (a hash of a playlist title and a time) used to avoid creating the same playlist twice. It does not place cookies or similar technology in any browser, and it does not collect information from anyone else's device. This website is hosted on GitHub Pages and does not set cookies; GitHub may keep standard server logs as described in the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
 
   <h2>8. How long data is kept</h2>
   <ul>
     <li>The OAuth authorization is kept until the owner disconnects the channel in the tool or revokes access.</li>
-    <li>All other YouTube data stored on the computer (channel statistics, the change history and backups used for undo, and log entries that contain channel text) is kept for no longer than 30 days; after that it is deleted or refreshed. Undo is therefore available only for changes made within the last 30 days.</li>
+    <li>All other YouTube data stored on the computer (channel statistics, the change history and backups used for undo, playlist creation markers, and log entries that contain channel text) is kept for no longer than 30 days; after that it is deleted or refreshed. Undo is therefore available only for changes made within the last 30 days.</li>
   </ul>
 
   <h2>9. Revoking access and deleting data</h2>
@@ -69,7 +74,7 @@
 
   <section class="vi" lang="vi">
     <h2>Tóm tắt tiếng Việt</h2>
-    <p>Cong Ty Kenh dùng YouTube API Services; dữ liệu còn chịu Chính sách quyền riêng tư của Google. Công cụ chỉ đọc thông tin, số liệu và mô tả kênh của chính chủ, và cập nhật mô tả kênh bằng nội dung chủ đã duyệt. Không truy cập mật khẩu, email, danh bạ hay dữ liệu người khác. Mọi thứ chỉ lưu trên máy tính Windows của chủ; giấy phép mã hoá bằng Windows DPAPI; không máy chủ riêng; không chia sẻ cho bên thứ ba, không quảng cáo. Dữ liệu YouTube lưu trên máy (trừ giấy phép) không quá 30 ngày rồi xoá hoặc làm mới. Có thể thu hồi quyền bất cứ lúc nào tại trang cài đặt bảo mật của Google; sau khi thu hồi, dữ liệu liên quan trên máy được xoá trong 7 ngày. Liên hệ: hiiamtieplus@gmail.com.</p>
+    <p>Cong Ty Kenh dùng YouTube API Services; dữ liệu còn chịu Chính sách quyền riêng tư của Google. Công cụ chỉ đọc thông tin, số liệu và mô tả kênh của chính chủ; cập nhật mô tả, quốc gia (Việt Nam — nơi chủ cư trú) và ngôn ngữ mặc định của kênh theo hồ sơ chủ đã duyệt; tạo danh sách phát công khai theo tiêu đề chủ đã duyệt (đọc tiêu đề danh sách phát có sẵn để không tạo trùng; không xoá, không đổi tên danh sách phát); chỉ ĐỌC trạng thái kênh (xác minh đăng video dài, đặt "dành cho trẻ em", có ảnh bìa) để chỉ cho chủ các bước thiết lập còn thiếu. Không truy cập mật khẩu, email, danh bạ hay dữ liệu người khác. Mọi thứ chỉ lưu trên máy tính Windows của chủ; giấy phép mã hoá bằng Windows DPAPI; không máy chủ riêng; không chia sẻ cho bên thứ ba, không quảng cáo. Dữ liệu YouTube lưu trên máy (trừ giấy phép) không quá 30 ngày rồi xoá hoặc làm mới. Có thể thu hồi quyền bất cứ lúc nào tại trang cài đặt bảo mật của Google; sau khi thu hồi, dữ liệu liên quan trên máy được xoá trong 7 ngày. Liên hệ: hiiamtieplus@gmail.com.</p>
   </section>
 </main>
 <footer class="site">
